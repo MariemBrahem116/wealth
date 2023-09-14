@@ -1,0 +1,81 @@
+.header {
+  color:#316c31;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid;
+	border-color: #6c8312;
+ }
+ @media screen and (max-width: 425px) {
+   .header {
+      padding: 10px;
+   }
+ }
+ .headerLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+ }
+ .headerLogo {
+   width: 80px;
+   height: 80px;
+   margin-right: 10px;
+ }
+ @media screen and (max-width: 500px){
+   .headerLogo{
+      width: 50px;
+      height: 50px;
+   }
+   .headerLink h1{
+      font-size: 11pt !important ;
+   }
+ }
+ .headerText {
+   margin: 0;
+   text-align: left;
+   color: #316c31;
+ }
+ .nav {
+   display: flex;
+   flex-direction: row;
+ }
+ .navItem {
+   margin-right: 10px;
+   padding: 10px 20px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   color: #316c31;
+   text-decoration: underline;
+ }
+ @media screen and (max-width: 425px) {
+   .navItem {
+      padding: 5px;
+   }
+ }
+ .navItem:hover{
+	-webkit-transform:scale(1.05);
+	    -ms-transform:scale(1.05);
+	        transform:scale(1.05);
+ }
+ .navItem:visited{
+   text-decoration:none;
+ }
+ .navItemText {
+   margin: 0;
+   font-size: 18px;
+ }
+ @media screen and (max-width: 425px) {
+   .navItemText {
+   font-size: 16px;
+   }
+ }
+ .title{
+   padding: 15px;
+   background-color: #dcf2cc;
+   border-radius: 10px;
+}

@@ -1,0 +1,61 @@
+.createWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.createTitle {
+  color: #475309;
+  margin-bottom: 30px;
+ }
+
+.createForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+.createFormContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ }
+.createFormContainerBottom {
+  margin-bottom: -10px;
+ }
+ .createFormContainer .dateOfBirth{
+  margin-left: -10px;
+}
+.createFormFieldset {
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 2px solid #6c8312;
+  border-radius: 1rem;
+ }
+ .createFormFieldsetLegend {
+  font-style: italic;
+  font-weight: 500;
+ }
+.modal {
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  top: 20%;
+  left: 25%;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

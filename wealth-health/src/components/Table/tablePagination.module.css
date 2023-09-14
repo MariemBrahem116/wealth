@@ -1,0 +1,36 @@
+.tableFooter {
+  padding: 8px 0px;
+  font-weight: 500;
+  text-align: left;
+  font-size: 16px;
+  color: #2c3e50;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+      justify-content: center;
+  overflow: auto hidden;
+  margin-bottom: 1rem;
+  }
+.tableFooter .button {
+  border: none;
+  padding: 7px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 4px;
+  margin-left: 4px;
+  }
+.activeButton {
+  color: white;
+  background: #316c31;
+  }
+.inactiveButton {
+  color: #2c3e50;
+  background: #f9f9f9;
+  }
