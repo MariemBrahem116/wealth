@@ -3,7 +3,7 @@ import React from 'react';
 /* prop types */
 import propTypes from 'prop-types';
 /* css  */
-import styles from '../FormItem/FormItem.module.css';
+import  '../FormItem/FormItem.css';
 /* select component    */
 import Select from 'select-react-by-mariem';
 /**
@@ -13,20 +13,29 @@ import Select from 'select-react-by-mariem';
  */
 function FormItem(props) {
    return (
-      <div className={styles.form_item}>
-         <label className={styles.form_label} htmlFor={props.id}>
+      <div className="form_item">
+         <label className="form_label" htmlFor={props.id}>
             {props.labelTitle}
          </label>
-         <div className={styles.form_input_message_wrapper}>
+         <div className="form_input_message_wrapper">
             {props.type === 'input' ? (
-               <input className={styles.form_input} type={props.inputType} id={props.id} placeholder={props.placeholder} required={props.required} pattern={props.pattern}
+               <input
+               className="form_input"
+               type={props.inputType}
+               id={props.id}
+               placeholder={props.placeholder}
+               required={props.required}
+               pattern={props.pattern}
                />
             ) : (
-               <Select id={props.id} options={props.selectOptions} abbreviations={props.selectAbbreviations} primaryColor="#94AC19" greyColor="#6c8312" lightGreyColor="#dcf2cc"
+               <Select
+               id={props.id}
+               options={props.selectOptions}
+               abbreviations={props.selectAbbreviations} primaryColor="#94AC19" greyColor="#6c8312" lightGreyColor="#dcf2cc"
                />
             )}
-            <span className={styles.form_error_message}>
-              {props.errorMessage};
+            <span className="form_error_message">
+              {props.errorMessage}
             </span>
          </div>
       </div>

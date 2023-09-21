@@ -1,7 +1,9 @@
 /* react */
 import React from 'react';
 /* css  */
-import styles from './FormButton.module.css';
+import './FormButton.css';
+/* prop types */
+import propTypes from 'prop-types';
 /* Redux */
 import { useDispatch } from 'react-redux';
 import { createEmployeeAction, toggleModalAction } from '../../redux/store';
@@ -13,7 +15,7 @@ import { createEmployeeAction, toggleModalAction } from '../../redux/store';
 function FormButton(props) {
   const dispatch = useDispatch();
   return (
-   <button className={styles.formButton}
+   <button className="formButton"
    onClick={(e) => {
     e.preventDefault();
     if (props.title === 'Save') {
@@ -23,8 +25,11 @@ function FormButton(props) {
     }
  }}
    >
-    <h1 className={styles.formButtonText}>{props.title}</h1>
+    <h1 className="formButtonText">{props.title}</h1>
    </button>
   )
 }
-export default FormButton
+FormButton.propTypes = {
+   title: propTypes.string.isRequired,
+};
+export default FormButton;

@@ -24,7 +24,9 @@ export function createEmployeeAction() {
       const stateField = document.getElementById('state');
       const zipCodeField = document.getElementById('zipCode');
       const departmentField = document.getElementById('department');
-      const fields = [firstNameField, lastNameField, dateOfBirthField, startDateField, streetField, cityField, stateField, zipCodeField, departmentField];
+      const fields = [firstNameField, lastNameField, dateOfBirthField, startDateField,
+                      streetField, cityField, stateField, zipCodeField, departmentField];
+
       const firstName = firstNameField.value;
       const lastName = lastNameField.value;
       const dateOfBirth = dateOfBirthField.value;
@@ -34,7 +36,9 @@ export function createEmployeeAction() {
       const state = stateField.getAttribute("value");
       const zipCode = zipCodeField.value;
       const department = departmentField.getAttribute("value");
-      const values = [firstName, lastName, dateOfBirth, startDate,street, city, state, zipCode, department];
+      const values = [firstName, lastName, dateOfBirth, startDate,
+                      street, city, state, zipCode, department];
+
       const employee = {
          'firstName': firstName,
          'lastName': lastName,
@@ -46,6 +50,7 @@ export function createEmployeeAction() {
          'zipCode': zipCode,
          'department': department
       };
+
       // Show error messages if inputs are empty, or hide if not
       for (let i=0; i < values.length; i++) {
          let errorMessage = fields[i].parentElement.lastChild;
@@ -56,6 +61,7 @@ export function createEmployeeAction() {
             errorMessage.classList.remove('form_error_message--visible');
          }
       }
+
       let isFormValid = true;
       for (let value of values) {
          if (value === '') {
@@ -68,7 +74,7 @@ export function createEmployeeAction() {
          dispatch(createEmployeeSuccessAction(employee));
          // Empty fields after submitting form
          for (let field of fields) {
-            field.value = '';
+            field.value = ''
          }
       }
    }

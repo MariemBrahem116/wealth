@@ -1,7 +1,7 @@
 /* react */
 import React from "react";
 /* css  */
-import styles from "../Modal/Modal.module.css";
+import "../Modal/Modal.css";
 /**
  * @function Modal
  * @export
@@ -11,9 +11,9 @@ import styles from "../Modal/Modal.module.css";
 const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
   return (
-    <div className={styles.modal_overlay}>
-      <div className={styles.modal_content}>
-        <button className={styles.close_button} onClick={onClose}>
+    <div className="modal_overlay">
+      <div className="modal_content">
+        <button className="close_button" onClick={onClose}>
         </button>
         {children}
       </div>
